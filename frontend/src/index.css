@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a.active hr{
+    display: block;
+}
+*{
+    font-family: Outfit;
+}
+.prata-regular {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+::-webkit-scrollbar{
+    display: none;
+}
+@media (max-width:640px) {
+    a.active{
+        background-color: black;
+        color: white;
+    }
+}
+/* Style for the success message */
+.bg-green-500 {
+  background-color: #48bb78;
+}
+
+.text-white {
+  color: white;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+ /* Tùy chỉnh nút chuyển ảnh với Tailwind */
+.swiper-button-next,
+.swiper-button-prev {
+  @apply text-white transition-colors duration-300;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover,
+.swiper-button-next:focus,
+.swiper-button-prev:focus {
+  @apply text-black;
+}
+/* Tùy chỉnh bullets (dấu chấm) với Tailwind */
+.swiper-pagination-bullet {
+  @apply bg-white opacity-70 transition-all duration-300;
+}
+
+.swiper-pagination-bullet:hover,
+.swiper-pagination-bullet:focus {
+  @apply bg-black opacity-100;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-black opacity-100;
+}
